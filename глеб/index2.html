@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main1.css">
+</head>
+<body>
+    <header class="header">
+    <div class="container header-inner">
+        <a class="logo" href="index1.html">Мой кабинет</a>
+        <nav class="nav">
+            <a href="index1.html">Кабинет</a>
+            <a class="active" href="index2.html">Сообщения</a>
+            <a href="index3.html">Статистика</a>
+        </nav>
+        <a class="logout" href="index1.html">Выйти</a>
+    </div>
+</header>
+
+<main class="container page">
+    <div class="page-title">
+        <p class="label">Общение</p>
+        <h1>Сообщения</h1>
+        <p class="muted">Отправляйте новые сообщения и просматривайте входящие.</p>
+    </div>
+
+    <div class="message-layout">
+        <section class="panel">
+            <h2>Новое сообщение</h2>
+            <form onsubmit="return false;">
+                <label for="recipient">Получатель</label>
+                <input id="recipient" type="text" placeholder="Введите логин получателя">
+
+                <label for="subject">Тема</label>
+                <input id="subject" type="text" placeholder="Введите тему сообщения">
+
+                <label for="text">Сообщение</label>
+                <textarea id="text" rows="7" placeholder="Введите текст сообщения"></textarea>
+
+                <button type="button" class="button" onclick="alert('Сообщение подготовлено к отправке!')">Отправить сообщение</button>
+            </form>
+        </section>
+
+        <section class="panel">
+            <div class="panel-head">
+                <h2>Входящие</h2>
+                <span class="badge">2 новых</span>
+            </div>
+
+            <article class="message">
+                <div class="message-top">
+                    <strong>admin</strong>
+                    <small>Сегодня, 10:30</small>
+                </div>
+                <h3>Добро пожаловать</h3>
+                <p>Ваш личный кабинет успешно создан. Теперь вы можете пользоваться системой сообщений.</p>
+            </article>
+
+            <article class="message">
+                <div class="message-top">
+                    <strong>teacher</strong>
+                    <small>Вчера, 16:15</small>
+                </div>
+                <h3>Учебный проект</h3>
+            </article>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
