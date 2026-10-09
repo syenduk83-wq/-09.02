@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="my_admin.css">
+    <title>admin</title>
+</head>
+<body>
+  <h1>Админ-панель</h1>
+  <p class="subtitle">Управление пользователями, сессиями и сообщениями</p>
+
+  <h2>Сообщения за 24 часа</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Отправитель</th>
+        <th>Получатель</th>
+        <th>Сообщение</th>
+        <th>Время</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>-</td>
+        <td></td>
+        <td>сообщение</td>
+        <td>14:32</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>Сообщение</td>
+        <td>14:28</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>Сообщение</td>
+        <td>13:55</td>
+      </tr>
+      <tr>
+        <td>-</td>
+        <td>-</td>
+        <td>сообщение</td>
+        <td>13:12</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>  Активные сессии</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Пользователь</th>
+        <th>Статус</th>
+        <th>IP-адрес</th>
+        <th>Последняя активность</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td><span class="online"> В сети</span></td>
+        <td></td>
+        <td></td>
+        <td><button class="btn btn-danger">Бан</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="online"> В сети</span></td>
+        <td></td>
+        <td></td>
+        <td><button class="btn btn-danger">Бан</button></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><span class="offline"> Не в сети</span></td>
+        <td></td>
+        <td></td>
+        <td><button class="btn">Завершить</button></td>
+      </tr>
+      <tr>
+        <td></td>
+<td><span class="online"> В сети</span></td>
+        <td></td>
+        <td></td>
+        <td><button class="btn btn-danger">Бан</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>  Пользователи</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Логин</th>
+        <th>Фамилия</th>
+        <th>Имя</th>
+        <th>Статус</th>
+        <th>Телефон</th>
+        <th>Действия</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Пользователь</td>
+        <td><span class="online"> </span></td>
+        <td>
+          <div class="actions">
+            <button class="btn"> Просмотр</button>
+            <button class="btn"> Изменить</button>
+            <button class="btn">  Пароль</button>
+            <button class="btn btn-danger">✕</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Модератор</td>
+        <td><span class="online"></span></td>
+        <td>
+          <div class="actions">
+            <button class="btn"> Просмотр</button>
+            <button class="btn"> Изменить</button>
+            <button class="btn">  Пароль</button>
+            <button class="btn btn-danger">✕</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Пользователь</td>
+        <td><span class="offline"> </span></td>
+        <td>
+          <div class="actions">
+            <button class="btn"> Просмотр</button>
+            <button class="btn"> Изменить</button>
+            <button class="btn">  Пароль</button>
+            <button class="btn btn-danger">✕</button>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Админ</td>
+        <td><span class="online"> </span></td>
+        <td class="block-actions">
+          <div class="actions">
+            <button class="btn"> Просмотр</button>
+            <button class="btn"> Изменить</button>
+            <button class="btn"> Пароль</button>
+            <button class="btn btn-danger">✕</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
